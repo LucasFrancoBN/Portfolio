@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px;
+  gap: 20px;
+}
+
+.header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.header ul li a {
+  padding: 10px 20px;
+}
+
+@media (max-width: 975px) {
+  .header nav a {
+    font-size: var(--font-2-s);
+  }
+}
+@media (max-width: 865px) {
+  .header nav li:not(:last-child) a {
+    background-color: rgba(16, 46, 63, 0.5);
+  }
+}

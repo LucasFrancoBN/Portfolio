@@ -1,0 +1,7 @@
+@import "./utilidades/container/container.css";
+@import "./utilidades/cor-e-bg/cor-e-bg.css";
+@import "./utilidades/fonts/fonts.css";
+@import "./utilidades/botaoLink/botaoLink.css";
+@import "./global/global.css";
+@import "./header/header.css";
+@import "./intro/intro.css";

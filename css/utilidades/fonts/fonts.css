@@ -1,0 +1,27 @@
+.font-1-titulo {
+  font: 700 4.5rem/1.125 "Cormorant Garamond", serif;
+}
+.font-1-xxl {
+  font: 700 4rem/1.125 "Cormorant Garamond", serif;
+}
+.font-2-xl {
+  font: 700 3rem/1.125 "Mulish", sans-serif;
+}
+.font-2-l {
+  font: 700 2rem/1.125 "Mulish", sans-serif;
+}
+.font-1-l {
+  font: 700 2rem/1.125 "Cormorant Garamond", serif;
+}
+.font-2-m-b {
+  font: 700 1.25rem/1.5 "Mulish", sans-serif;
+}
+.font-2-m {
+  font: 400 1.25rem/1.5 "Mulish", sans-serif;
+}
+.font-2-s {
+  font: 700 1rem/1.5 "Mulish", sans-serif;
+}
+.font-2-s-eb {
+  font: 800 1rem/1.5 "Mulish", sans-serif;
+}
