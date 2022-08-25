@@ -4,6 +4,7 @@
   background: var(--gradiente1);
   color: var(--cor-b8);
   box-shadow: 6px 6px 0 #000;
+  padding: 10px 20px;
 }
 
 .botaoLink:hover {

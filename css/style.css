@@ -3,5 +3,7 @@
 @import "./utilidades/fonts/fonts.css";
 @import "./utilidades/botaoLink/botaoLink.css";
 @import "./global/global.css";
+@import "./animacoes/animacoes.css";
 @import "./header/header.css";
 @import "./intro/intro.css";
+@import "./menu-mobile/menu-mobile.css";

@@ -1,0 +1,53 @@
+[data-menu="button"] {
+  display: none;
+}
+@media (max-width: 860px) {
+  .js [data-menu="button"] {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: rgb(16, 46, 63);
+    border: none;
+    font-size: 1.125rem;
+    color: var(--cor-branco);
+    cursor: pointer;
+    position: relative;
+    z-index: 200;
+  }
+  .js [data-menu="button"]::before {
+    display: inline-block;
+    content: "";
+    width: 12px;
+    height: 2px;
+    background-color: var(--cor-branco);
+    box-shadow: 0 4px var(--cor-branco), 0 -4px var(--cor-branco);
+    margin: 4px;
+    transition: transform 0.3s;
+  }
+
+  .js [data-menu="button"].ativo::before {
+    transform: rotate(90deg);
+  }
+
+  .js [data-menu="list"] {
+    display: none;
+    position: absolute;
+    background-color: rgb(16, 46, 63);
+    width: 160px;
+    z-index: 100;
+    top: 84px;
+    left: 215px;
+    padding: 42px 0 16px;
+  }
+  .js [data-menu="list"].ativo {
+    display: block;
+    animation: show-right 0.3s forwards;
+  }
+}
+
+@media (max-width: 346px) {
+  .js [data-menu="list"] {
+    top: 147px;
+    left: initial;
+  }
+}
