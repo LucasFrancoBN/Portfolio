@@ -66,6 +66,22 @@
   color: var(--cor-branco);
 }
 
+.cor-e1 {
+  color: var(--cor-e1);
+}
+.cor-e2 {
+  color: var(--cor-e2);
+}
+.cor-e3 {
+  color: var(--cor-e3);
+}
+.cor-e4 {
+  color: var(--cor-e4);
+}
+.cor-e5 {
+  color: var(--cor-e5);
+}
+
 .bg-b10 {
   background-color: var(--cor-b10);
 }
@@ -73,6 +89,6 @@
   background-color: var(--cor-b12);
 }
 
-.bh-b8 {
+.bg-b8 {
   background-color: var(--cor-b8);
 }

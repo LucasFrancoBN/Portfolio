@@ -1,0 +1,118 @@
+.informacoes {
+  padding: 60px 0 42px;
+}
+
+.informacoes-lista {
+  display: flex;
+}
+
+.informacoes-lista li {
+  padding: 12px 24px;
+  background: var(--cor-b11);
+  border: 2px solid var(--cor-b12);
+  border-bottom: none;
+}
+
+.informacoes-lista li + li {
+  border-left: none;
+}
+
+.informacoes-lista li.sobre.ativo,
+.informacoes-lista li.formacao.ativo,
+.informacoes-lista li.skills.ativo {
+  position: relative;
+  background: var(--cor-b8);
+  color: var(--cor-branco);
+}
+
+.informacoes-lista li.sobre.ativo::before,
+.informacoes-lista li.formacao.ativo::before,
+.informacoes-lista li.skills.ativo::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--cor-b8);
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+.informacoes-descricao {
+  padding: 60px;
+  border: 2px solid var(--cor-b12);
+}
+
+.informacoes-descricao .sobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.informacoes .desativado {
+  display: none;
+}
+
+.informacoes .formacao-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.formacao-titulo {
+  margin-bottom: 12px;
+}
+
+.formacao-conteudo div {
+  background: var(--cor-b10);
+  padding: 24px 24px 14px;
+}
+
+.formacao-conteudo div h2 {
+  margin-bottom: 20px;
+}
+
+.formacao-conteudo div:not(:nth-child(2)) li {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: baseline;
+}
+
+div.formacao-conteudo div.certificados li {
+  display: grid;
+  grid-template-columns: 15px 2fr 1fr;
+  align-items: baseline;
+  gap: 7px;
+  margin-bottom: 16px;
+  /* border: 1px solid red; */
+}
+
+div.formacao-conteudo div.certificados li span:nth-child(2) {
+  justify-self: end;
+}
+
+.formacao-conteudo div:not(:first-child) li::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 10px;
+  margin-right: 7px;
+  background-size: cover;
+  background-image: url("../../imgs/concluido.svg");
+}
+
+.formacao-conteudo div:first-child li::before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 12px;
+  margin-right: 7px;
+  margin-bottom: 12px;
+  background-size: cover;
+  background-image: url("../../imgs/concluido.svg");
+}
+
+.formacao-conteudo .certificados {
+  grid-column: 2;
+  grid-row: 1/3;
+}

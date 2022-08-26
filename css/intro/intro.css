@@ -14,10 +14,6 @@
   margin-bottom: 8px;
 }
 
-.descricao h1 span {
-  color: var(--cor-e1);
-}
-
 @media (max-width: 1075px) {
   .intro figure {
     justify-self: end;
