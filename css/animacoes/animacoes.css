@@ -8,3 +8,14 @@
     transform: translate3d(0, 0, 0);
   }
 }
+
+@keyframes show-down {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 2500px;
+  }
+}

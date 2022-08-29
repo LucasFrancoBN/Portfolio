@@ -1,0 +1,97 @@
+.js .informacoes-descricao [data-tabNav="section"].formacao.ativo {
+  display: block;
+  animation: show-down 0.75s forwards;
+}
+
+.informacoes .formacao-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.formacao-titulo {
+  margin-bottom: 12px;
+}
+
+.formacao-conteudo div {
+  background: var(--cor-b10);
+  padding: 24px 24px 14px;
+}
+
+.formacao-conteudo div h2 {
+  margin-bottom: 20px;
+}
+
+.formacao-conteudo div:not(:nth-child(2)) li {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: baseline;
+}
+
+div.formacao-conteudo div.certificados li {
+  display: grid;
+  grid-template-columns: 15px 2fr 1fr;
+  align-items: baseline;
+  gap: 7px;
+  margin-bottom: 16px;
+}
+
+div.formacao-conteudo div.certificados li span:nth-child(2) {
+  justify-self: end;
+}
+
+.formacao-conteudo div:not(:first-child) li::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 10px;
+  margin-right: 7px;
+  background-size: cover;
+  background-image: url("../../imgs/concluido.svg");
+}
+
+.formacao-conteudo div:first-child li::before {
+  content: "";
+  display: flex;
+  flex-shrink: 0;
+  width: 22px;
+  height: 12px;
+  margin-right: 7px;
+  margin-bottom: 12px;
+  background-size: cover;
+  background-image: url("../../imgs/concluido.svg");
+}
+
+.formacao-conteudo .certificados {
+  grid-column: 2;
+  grid-row: 1/3;
+}
+
+@media (max-width: 1000px) {
+  .informacoes .formacao-conteudo {
+    grid-template-columns: 1fr;
+  }
+
+  .formacao-conteudo .certificados {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .formacao-conteudo div:first-child li::before {
+    width: 15px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 760px) {
+  .formacao-titulo {
+    font: 700 3rem/1.125 "Cormorant Garamond", serif;
+  }
+  .formacao-conteudo div h2 {
+    font: 700 1.5rem/1.5 "Mulish", sans-serif;
+    margin-bottom: 8px;
+  }
+  .formacao-conteudo li {
+    font: 400 1rem/1.5 "Mulish", sans-serif;
+    margin-bottom: 160px;
+  }
+}
