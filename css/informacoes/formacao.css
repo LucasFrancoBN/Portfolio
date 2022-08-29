@@ -1,6 +1,6 @@
 .js .informacoes-descricao [data-tabNav="section"].formacao.ativo {
   display: block;
-  animation: show-down 0.75s forwards;
+  animation: show-down 1.2s forwards;
 }
 
 .informacoes .formacao-conteudo {

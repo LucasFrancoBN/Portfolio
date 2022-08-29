@@ -51,7 +51,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  animation: show-down 0.75s forwards;
+  animation: show-down 1.2s forwards;
 }
 
 @media (max-width: 900px) {
