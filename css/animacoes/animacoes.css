@@ -12,7 +12,7 @@
 @keyframes show-down {
   from {
     opacity: 0;
-    max-height: 0;
+    max-height: 250px;
   }
   to {
     opacity: 1;

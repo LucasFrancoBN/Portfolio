@@ -2,3 +2,8 @@
   max-width: 1232px;
   margin: 0 auto;
 }
+
+.container1600 {
+  max-width: 1690px;
+  margin: 0 auto;
+}

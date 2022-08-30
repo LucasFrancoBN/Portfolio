@@ -1,0 +1,65 @@
+.exp {
+  padding-top: 200px;
+}
+
+.exp h1 {
+  padding-left: 32px;
+  margin-bottom: 32px;
+}
+
+.exp-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 80px;
+  padding: 0 90px;
+}
+
+.exp-item {
+  max-width: 420px;
+  padding: 32px;
+}
+
+.exp-item img {
+  margin-bottom: 32px;
+}
+
+.exp-item h2 {
+  margin-bottom: 6px;
+}
+
+.exp-item p {
+  margin-bottom: 12px;
+}
+
+.exp-item a {
+  display: inline-block;
+}
+
+@media (max-width: 1200px) {
+  .exp-conteudo {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 32px;
+  }
+}
+
+@media (max-width: 750px) {
+  .exp h1 {
+    font: 700 3rem/1.125 "Cormorant Garamond", serif;
+  }
+  .exp-conteudo {
+    grid-template-columns: 1fr;
+  }
+
+  .exp-item {
+    max-width: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .exp-conteudo {
+    padding: 0 8px;
+  }
+  .exp-item {
+    padding: 16px;
+  }
+}
