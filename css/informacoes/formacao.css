@@ -54,8 +54,8 @@ div.formacao-conteudo div.certificados li span:nth-child(2) {
   content: "";
   display: flex;
   flex-shrink: 0;
-  width: 22px;
-  height: 12px;
+  width: 15px;
+  height: 10px;
   margin-right: 7px;
   margin-bottom: 12px;
   background-size: cover;

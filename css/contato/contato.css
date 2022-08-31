@@ -1,0 +1,27 @@
+.contato {
+  padding-top: 32px;
+  padding-bottom: 120px;
+}
+
+.contato .contato-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 40px;
+}
+
+.contato-conteudo h1 {
+  grid-column: 1/-1;
+  margin-bottom: 32px;
+}
+
+.contato-conteudo div a {
+  background: var(--cor-b11);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.contato-conteudo div:last-child {
+  grid-column: 1 / 3;
+}
