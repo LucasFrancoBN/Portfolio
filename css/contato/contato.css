@@ -1,6 +1,5 @@
 .contato {
-  padding-top: 32px;
-  padding-bottom: 120px;
+  padding: 32px 32px 120px;
 }
 
 .contato .contato-conteudo {
@@ -11,7 +10,6 @@
 
 .contato-conteudo h1 {
   grid-column: 1/-1;
-  margin-bottom: 32px;
 }
 
 .contato-conteudo div a {
@@ -20,8 +18,60 @@
   align-items: center;
   gap: 20px;
   padding: 20px;
+  padding-right: 0;
 }
 
 .contato-conteudo div:last-child {
   grid-column: 1 / 3;
+}
+
+@media (max-width: 1130px) {
+  .contato .contato-conteudo {
+    grid-template-columns: 1fr;
+  }
+  .contato-conteudo div:last-child {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 950px) {
+  .contato-conteudo img {
+    max-width: 3rem;
+  }
+  .contato-conteudo div span {
+    font: 700 2rem/1.125 "Mulish", sans-serif;
+  }
+}
+
+@media (max-width: 750px) {
+  .contato-conteudo h1 {
+    font: 700 3rem/1.125 "Cormorant Garamond", serif;
+  }
+}
+
+@media (max-width: 580px) {
+  .contato {
+    padding: 8px 8px 120px;
+  }
+
+  .contato-conteudo div a {
+    padding-left: 16px;
+    gap: 8px;
+  }
+
+  .contato-conteudo img {
+    max-width: 2.5rem;
+  }
+  .contato-conteudo div span {
+    font: 700 1.25rem/1.125 "Mulish", sans-serif;
+  }
+}
+
+@media (max-width: 380px) {
+  .contato-conteudo img {
+    max-width: 1.5rem;
+  }
+  .contato-conteudo div span {
+    font: 700 1rem/1.5 "Mulish", sans-serif;
+  }
 }

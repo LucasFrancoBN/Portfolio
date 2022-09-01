@@ -4,3 +4,9 @@ footer {
   margin: auto;
   text-align: center;
 }
+
+@media (max-width: 750px) {
+  footer .copy {
+    font: 700 1.25rem/1.5 "Mulish", sans-serif;
+  }
+}

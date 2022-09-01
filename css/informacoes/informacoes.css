@@ -1,5 +1,5 @@
 .informacoes {
-  padding: 60px 0 42px;
+  padding: 60px 32px 42px;
   min-height: 770px;
 }
 
@@ -69,11 +69,21 @@
 }
 
 @media (max-width: 750px) {
+  .informacoes {
+    padding: 60px 16px 42px;
+  }
+
   .sobre h1 {
     font: 700 3rem/1.125 "Cormorant Garamond", serif;
   }
   .sobre p {
     font: 400 1rem/1.5 "Mulish", sans-serif;
+  }
+}
+
+@media (max-width: 410px) {
+  .informacoes {
+    padding: 60px 4px 42px;
   }
 }
 
