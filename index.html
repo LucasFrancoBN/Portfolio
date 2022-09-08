@@ -22,8 +22,8 @@
       <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
       <ul data-menu="list" id="menu">
         <li><a href="#sobre" class="font-2-m-b">Sobre</a></li>
-        <li><a href="#Experiencia" class="font-2-m-b">Experiência</a></li>
-        <li><a href="#Contato" class="font-2-m-b">Contato</a></li>
+        <li><a href="#experiencia" class="font-2-m-b">Experiência</a></li>
+        <li><a href="#contato" class="font-2-m-b">Contato</a></li>
       </ul>
     </nav>
   </header>
@@ -35,8 +35,8 @@
     </div>
     <figure><img src="./imgs/minhaFoto.png" alt=""></figure>
   </main>
-  <article class="informacoes bg-b10">
-    <div class=" container bg-b8">
+  <article id="sobre" class="informacoes bg-b10">
+    <div class=" container bg-b8" data-anima-scroll>
       <ul class="informacoes-lista bg-b10">
         <li class="font-2-m-b cor-b4 sobre" data-tabNav="item">Sobre</li>
         <li class="font-2-m-b cor-b4 formacao" data-tabNav="item">Formação</li>
@@ -47,7 +47,7 @@
           <figure><img src="./imgs/ilustracao.svg" alt=""></figure>
           <div>
             <h1 class="font-1-xxl cor-e1">Sobre</h1>
-            <p class="font-2-m cor-b4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="font-2-m cor-b4">Olá, tudo bem? Eu sou Lucas Franco, atualmente tenho 20 anos, resido em São Paulo Capital e sou desenvolvedor front-end. Hoje eu estou cursando análise e desenvolvimento pela FECAP (Fundação Escola de Comércio Álvares Penteado) e vou terminar o tecnólogo já em 2023. Sou apaixonado por tecnologia e pelo mundo do desenvolvimento, sou criativo, trabalho bem em equipe, possuo conhecimento sobre metodologias ágeis (Scrum e Kanban) além de possuir o nível intermediário em inglês. Ademais, possuo Domínio sobre HTML e CSS, uma base muito sólida em JavaScript, e também conhecimento sobre C# e banco de dados relacional (MySQL e Oracle).</p>
           </div>
         </section>
         <section class="formacao" data-tabNav="section">
@@ -177,49 +177,51 @@
       </div>
     </div>
   </article>
-  <article class="exp bg-b12">
-    <h1 class="font-1-titulo cor-e1 container">Experiência</h1>
-    <section class="exp-conteudo container1600">
-      <div class="exp-item bg-b10">
-        <figure><img src="./imgs/print-home 1.png" alt="Bikecraft"></figure>
-        <h2 class="font-1-l cor-b4">Bikecraft</h2>
-        <p class="font-2-s cor-b5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a class="font-2-s-eb botaoLink" href="" target="_blank">ACESSAR PROJETO</a>
-      </div>
-      <div class="exp-item bg-b10">
-        <figure><img src="./imgs/PC 1.png" alt="Bikecraft"></figure>
-        <h2 class="font-1-l cor-b4">Cromo IT</h2>
-        <p class="font-2-s cor-b5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a class="font-2-s-eb botaoLink" href="" target="_blank">ACESSAR PROJETO</a>
-      </div>
-      <div class="exp-item bg-b10">
-        <figure><img src="./imgs/verificador-de-idade1 1.png" alt="Bikecraft"></figure>
-        <h2 class="font-1-l cor-b4">Verificador de idade</h2>
-        <p class="font-2-s cor-b5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a class="font-2-s-eb botaoLink" href="" target="_blank">ACESSAR PROJETO</a>
-      </div>
-      <div class="exp-item bg-b10">
-        <figure><img src="./imgs/Wildbeast 1.png" alt="Bikecraft"></figure>
-        <h2 class="font-1-l cor-b4">Wildbeast</h2>
-        <p class="font-2-s cor-b5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a class="font-2-s-eb botaoLink" href="" target="_blank">ACESSAR PROJETO</a>
-      </div>
-      <div class="exp-item bg-b10">
-        <figure><img src="./imgs/printTela1 1.png" alt="Bikecraft"></figure>
-        <h2 class="font-1-l cor-b4">Music Player</h2>
-        <p class="font-2-s cor-b5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a class="font-2-s-eb botaoLink" href="" target="_blank">ACESSAR PROJETO</a>
-      </div>
-      <div class="exp-item bg-b10">
-        <figure><img src="./imgs/churrascometro 1.png" alt="Bikecraft"></figure>
-        <h2 class="font-1-l cor-b4">Churrascomêtro</h2>
-        <p class="font-2-s cor-b5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a class="font-2-s-eb botaoLink" href="" target="_blank">ACESSAR PROJETO</a>
-      </div>
-    </section>
+  <article id="experiencia" class="exp bg-b12">
+    <div data-anima-scroll>
+      <h1 class="font-1-titulo cor-e1 container">Experiência</h1>
+      <section class="exp-conteudo container1600">
+        <div class="exp-item bg-b10">
+          <figure><img src="./imgs/print-home 1.png" alt="Bikecraft"></figure>
+          <h2 class="font-1-l cor-b4">Bikecraft</h2>
+          <p class="font-2-s cor-b5">Projeto feito para a marca <strong class="cor-b4">Bikecraft</strong> (fictício) vender suas bicicletas. O projeto conta com inúmeras páginas e diversos recursos de <strong class="cor-b4">JS</strong> e <strong class="cor-b4">UI/UX Design</strong>, tornando-o bem atrativo e elegante.</p>
+          <a class="font-2-s-eb botaoLink" href="https://lucasfrancobn.github.io/Bikecraft/" target="_blank">ACESSAR PROJETO</a>
+        </div>
+        <div class="exp-item bg-b10">
+          <figure><img src="./imgs/PC 1.png" alt="CromoIT"></figure>
+          <h2 class="font-1-l cor-b4">Cromo IT</h2>
+          <p class="font-2-s cor-b5">Projeto desenvolvido para ajudar na <strong class="cor-b4">qualidade do sono</strong> através de um servidor <strong class="cor-b4">ESP8266</strong> em conjunto com a cromoterapia e com música. Infelizmente para testar site do projeto é necessário um ESP8266.</p>
+          <a class="font-2-s-eb botaoLink" href="https://github.com/LucasFrancoBN/CromoIT" target="_blank">ACESSAR PROJETO</a>
+        </div>
+        <div class="exp-item bg-b10">
+          <figure><img src="./imgs/verificador-de-idade1 1.png" alt="Verificador de Idade"></figure>
+          <h2 class="font-1-l cor-b4">Verificador de idade</h2>
+          <p class="font-2-s cor-b5">Projeto feito para calcular a idade que o usuário coloca juntamente o sexo que o usuário escolheu.</p>
+          <a class="font-2-s-eb botaoLink" href="https://lucasfrancobn.github.io/Verificador-de-Idade/" target="_blank">ACESSAR PROJETO</a>
+        </div>
+        <div class="exp-item bg-b10">
+          <figure><img src="./imgs/Wildbeast 1.png" alt="Wildbeast"></figure>
+          <h2 class="font-1-l cor-b4">Wildbeast</h2>
+          <p class="font-2-s cor-b5">Site feito para aprofundar os estudos da tecnologia <strong class="cor-b4">Grid</strong> e todos os seus aspectos.</p>
+          <a class="font-2-s-eb botaoLink" href="https://lucasfrancobn.github.io/Wildbeast/" target="_blank">ACESSAR PROJETO</a>
+        </div>
+        <div class="exp-item bg-b10">
+          <figure><img src="./imgs/printTela1 1.png" alt="Music Player"></figure>
+          <h2 class="font-1-l cor-b4">Music Player</h2>
+          <p class="font-2-s cor-b5">Projetado para ser um <strong class="cor-b4">music player</strong> que toca 5 músicas.</p>
+          <a class="font-2-s-eb botaoLink" href="https://lucasfrancobn.github.io/MusicPlayer/" target="_blank">ACESSAR PROJETO</a>
+        </div>
+        <div class="exp-item bg-b10">
+          <figure><img src="./imgs/churrascometro 1.png" alt="Churrascomêtro"></figure>
+          <h2 class="font-1-l cor-b4">Churrascomêtro</h2>
+          <p class="font-2-s cor-b5">Projeto realizado para <strong class="cor-b4">calcular</strong> a quantidade de carne, cerveja e refrigerante conforme o número de <strong class="cor-b4"> pessoa </strong>, <strong class="cor-b4"> criança </strong> e a <strong class="cor-b4"> duração do churrasco </strong> .</p>
+          <a class="font-2-s-eb botaoLink" href="" target="_blank">ACESSAR PROJETO</a>
+        </div>
+      </section>
+    </div>
   </article>
-  <article class="contato bg-b10">
-    <div class="container contato-conteudo">
+  <article id="contato" class="contato bg-b10">
+    <div class="container contato-conteudo" data-anima-scroll>
       <h1 class="font-1-titulo cor-e1">Contato</h1>
       <div>
         <a href="https://www.linkedin.com/in/lucas-franco-barbosa-navarro-a51937221/" target="_blank">

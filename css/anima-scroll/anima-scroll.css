@@ -1,0 +1,7 @@
+.js [data-anima-scroll] {
+  opacity: 0;
+}
+
+.js [data-anima-scroll].ativo {
+  animation: show-right 0.5s forwards;
+}

@@ -43,6 +43,10 @@
     display: block;
     animation: show-right 0.3s forwards;
   }
+
+  .js [data-menu="list"].ativo a {
+    display: block;
+  }
 }
 
 @media (max-width: 346px) {
