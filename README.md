@@ -18,7 +18,7 @@
         <br><br>
        
  <h2> 📱 Responsivo </h2>
-    <img src="./imgs/responsivoREADME.jpg alt="" style="width:250px">
+    <img src="./imgs/responsivoREADME.jpg" alt="" style="width:250px">
         <br><br>
 </div>
 
