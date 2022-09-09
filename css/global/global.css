@@ -5,7 +5,7 @@
 }
 
 body {
-  background: url("../../imgs/papyrus-dark\ 1.webp"), var(--cor-b12);
+  background: url("../../imgs/papyrus-dark1.webp"), var(--cor-b12);
   font-family: "Mulish", sans-serif;
   color: var(--cor-branco);
 }
