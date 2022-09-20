@@ -1,4 +1,4 @@
-<h1>Meu Portifólio </h1>
+<h1>Meu Portfólio </h1>
 
 <!-- LINKS -->
 <div align="center">
